@@ -22,7 +22,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="469dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -30,33 +30,80 @@
         <cs301.birthdaycake.CakeView
             android:id="@+id/cakeview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="469dp"
             android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="308dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="HOORAY!!" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <Switch
-            android:id="@+id/switch2"
-            android:layout_width="110dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:text="Frosting" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:text="yay..." />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How many candles?" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="127dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Frosting" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blown out" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="110dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Candle" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Goodbye" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
 
     </LinearLayout>
+
 </LinearLayout>
