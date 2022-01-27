@@ -9,13 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Happy Birthday"
+            android:gravity="center"
             android:textColor="@android:color/holo_orange_dark"
             android:textSize="30sp" />
     </LinearLayout>
@@ -35,23 +37,25 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="732dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:orientation="horizontal">
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="40"
                     android:text="How many candles?" />
 
                 <Switch
@@ -59,6 +63,7 @@
                     android:layout_width="127dp"
                     android:layout_height="48dp"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:text="Frosting" />
 
                 <Button
@@ -70,38 +75,42 @@
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <SeekBar
                     android:id="@+id/seekBar"
-                    android:layout_width="133dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progress="2"
+                    android:max="5"
+                    android:layout_weight="40" />
 
                 <Switch
                     android:id="@+id/switch3"
                     android:layout_width="110dp"
                     android:layout_height="48dp"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:text="Candle" />
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="110dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="goodbye"
                     android:text="Goodbye" />
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </TableLayout>
 
     </LinearLayout>
