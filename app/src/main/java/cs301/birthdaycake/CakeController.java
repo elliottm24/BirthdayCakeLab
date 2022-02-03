@@ -1,2 +1,4 @@
-package cs301.birthdaycake;public class CakeController {
+package cs301.birthdaycake;
+
+public class CakeController {
 }
